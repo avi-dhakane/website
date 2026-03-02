@@ -1,202 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Golden Years Care Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+<title>Golden Years Old Age Home</title>
+<link rel="stylesheet" href="style.css">
 
-        body {
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+<script>
+function showContent(id) {
+    var sections = document.getElementsByClassName("tabContent");
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = "none";
+    }
+    document.getElementById(id).style.display = "block";
+}
+</script>
 
-        header {
-            background: #2e8b57;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        nav {
-            background: #246b45;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') no-repeat center center/cover;
-            height: 400px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-size: 40px;
-            background: rgba(0,0,0,0.5);
-            padding: 15px;
-            border-radius: 10px;
-        }
-
-        section {
-            padding: 40px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #2e8b57;
-        }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #2e8b57;
-        }
-
-        .about, .mission {
-            text-align: center;
-        }
-
-        footer {
-            background: #2e8b57;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #2e8b57;
-            color: white;
-            padding: 10px 20px;
-            margin-top: 15px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .btn:hover {
-            background: #246b45;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 28px;
-            }
-        }
-    </style>
 </head>
-<body>
+
+<body style="background-image:url('https://anandamoldagehome.org/wp-content/uploads/2020/03/8.jpg');">
+
 
 <header>
-    <h1>Golden Years Care Home</h1>
-    <p>A Place Where Comfort, Dignity & Compassion Meet</p>
+<h1>Golden Years Old Age Home</h1>
+<p>Caring with Love, Respect & Dignity</p>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Gallery</a>
-    <a href="#">Contact</a>
+<a href="index.html">Home</a>
+<a href="information.html">Information</a>
+<a href="services.html">Services</a>
+<a href="recovered.html">Recovered Civilians</a>
+<a href="gallery.html">Gallery</a>
+<a href="reviews.html">Reviews</a>
+<a href="about.html">About Us</a>
 </nav>
 
-<div class="hero">
-    <h1>Providing Love & Care for Your Loved Ones</h1>
+<div class="content">
+<h2>Welcome to Our Home</h2>
+
+<button onclick="showContent('about')">About Home</button>
+<button onclick="showContent('mission')">Our Mission</button>
+<button onclick="showContent('vision')">Our Vision</button>
+
+<div id="about" class="tabContent">
+<p>Golden Years Old Age Home provides a peaceful, safe, and caring environment for senior citizens. Our residents are treated with love, compassion, and respect.</p>
 </div>
 
-<section class="about">
-    <h2>About Us</h2>
-    <p>
-        Golden Years Care Home is dedicated to providing a safe, peaceful, and nurturing 
-        environment for senior citizens. We focus on comfort, health, and happiness, 
-        ensuring every resident feels at home and valued.
-    </p>
-</section>
+<div id="mission" class="tabContent" style="display:none;">
+<p>Our mission is to provide quality healthcare, emotional support, and a joyful atmosphere where elderly individuals can live happily and securely.</p>
+</div>
 
-<section class="mission">
-    <h2>Our Mission</h2>
-    <p>
-        To offer compassionate care, promote independence, and create a supportive 
-        community where seniors can enjoy their golden years with dignity and joy.
-    </p>
-</section>
+<div id="vision" class="tabContent" style="display:none;">
+<p>Our vision is to create a society where every senior citizen lives with dignity, care, and companionship.</p>
+</div>
 
-<section>
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">
-            <h3>Comfortable Accommodation</h3>
-            <p>Spacious rooms, 24/7 security, and housekeeping services for a comfortable stay.</p>
-        </div>
-
-        <div class="card">
-            <h3>Medical Support</h3>
-            <p>Regular health check-ups, nursing care, and emergency medical assistance.</p>
-        </div>
-
-        <div class="card">
-            <h3>Nutritious Meals</h3>
-            <p>Fresh, balanced meals with special dietary options as per medical needs.</p>
-        </div>
-
-        <div class="card">
-            <h3>Recreation & Activities</h3>
-            <p>Yoga sessions, cultural events, indoor games, and social gatherings.</p>
-        </div>
-    </div>
-</section>
-
-<section style="text-align:center;">
-    <h2>Schedule a Visit</h2>
-    <p>We welcome families to visit and experience our caring environment firsthand.</p>
-    <a href="#" class="btn">Contact Us Today</a>
-</section>
-
-<footer>
-    <p>📍 123 Harmony Lane, Green Valley</p>
-    <p>📞 +1 (000) 123-4567 | ✉ info@goldenyearscare.com</p>
-    <p>&copy; 2026 Golden Years Care Home. All Rights Reserved.</p>
-</footer>
-
+</div>
 </body>
 </html>
