@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maanavta Old Age Home</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+function showContent(id) {
+    var sections = document.getElementsByClassName("tabContent");
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = "none";
+    }
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</head>
+
+<body style="background-image:url('8.jpeg');">
+
+
+<header>
+<h1>Maanavta Old Age Home</h1>
+<p>Caring with Love, Respect & Dignity</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="information.html">Information</a>
+<a href="services.html">Services</a>
+<a href="recovered.html">Recovered Civilians</a>
+<a href="gallery.html">Gallery</a>
+<a href="reviews.html">Reviews</a>
+<a href="about.html">About Us</a>
+</nav>
+
+<div class="content">
+<h2>Welcome to Our Home</h2>
+
+<button onclick="showContent('about')">About Home</button>
+<button onclick="showContent('mission')">Our Mission</button>
+<button onclick="showContent('vision')">Our Vision</button>
+
+<div id="about" class="tabContent">
+<p>Maanavta Old Age Home provides a peaceful, safe, and caring environment for senior citizens. Our residents are treated with love, compassion, and respect.</p>
+</div>
+
+<div id="mission" class="tabContent" style="display:none;">
+<p>Our mission is to provide quality healthcare, emotional support, and a joyful atmosphere where elderly individuals can live happily and securely.</p>
+</div>
+
+<div id="vision" class="tabContent" style="display:none;">
+<p>Our vision is to create a society where every senior citizen lives with dignity, care, and companionship.</p>
+</div>
+
+</div>
+</body>
+</html>
