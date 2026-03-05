@@ -57,4 +57,103 @@ img {
     height: 200px;
     margin: 10px;
     border-radius: 10px;
+
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f5f7fa;
+}
+
+/* Header */
+
+header{
+text-align:center;
+padding:40px 20px;
+background:#2c6e49;
+color:white;
+}
+
+.subtitle{
+opacity:0.9;
+margin-top:5px;
+}
+
+/* Navigation */
+
+nav{
+background:#1b4332;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:15px;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* Reviews Layout */
+
+.reviews-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:40px 20px;
+}
+
+/* Review Card */
+
+.review-card{
+background:white;
+width:280px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+}
+
+.review-card:hover{
+transform:translateY(-5px);
+}
+
+/* Avatar */
+
+.avatar{
+width:60px;
+height:60px;
+background:#2c6e49;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:22px;
+margin:0 auto 15px auto;
+}
+
+/* Text */
+
+.review-text{
+font-size:15px;
+color:#444;
+line-height:1.6;
+margin-bottom:15px;
+}
+
+.review-card h3{
+margin:5px 0;
+}
+
+.role{
+font-size:13px;
+color:#777;
 }
