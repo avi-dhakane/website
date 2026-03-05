@@ -60,44 +60,7 @@ img {
 
 }
 
-body{
-font-family: Arial, Helvetica, sans-serif;
-margin:0;
-background:#f5f7fa;
-}
 
-/* Header */
-
-header{
-text-align:center;
-padding:40px 20px;
-background:#2c6e49;
-color:white;
-}
-
-.subtitle{
-opacity:0.9;
-margin-top:5px;
-}
-
-/* Navigation */
-
-nav{
-background:#1b4332;
-text-align:center;
-padding:12px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-size:15px;
-}
-
-nav a:hover{
-text-decoration:underline;
-}
 
 /* Reviews Layout */
 
@@ -157,3 +120,4 @@ margin:5px 0;
 font-size:13px;
 color:#777;
 }
+
